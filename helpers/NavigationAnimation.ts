@@ -46,8 +46,8 @@ export const NavigationAnimation: NavigationAnimationType = ({
         delay: 0.1,
         ease: Power4.easeIn,
         onComplete: function () {
-          // closeTrigger.current.style.display = "block";
-          closeTrigger.current.style.zIndex = "25";
+          closeTrigger.current.style.display = "block";
+          // closeTrigger.current.style.zIndex = "25";
         },
       },
       "preOpen"
@@ -60,8 +60,8 @@ export const NavigationAnimation: NavigationAnimationType = ({
         y: "-=80px",
         ease: Power4.easeIn,
         onComplete: function () {
-          openTrigger.current.style.visibility = "visible";
-          // openTrigger.current.style.display = "none";
+          // openTrigger.current.style.visibility = "hidden";
+          openTrigger.current.style.display = "none";
         },
       },
       "preOpen"
@@ -153,10 +153,10 @@ export const NavigationAnimation: NavigationAnimationType = ({
         backgroundColor: "#6295ca",
         ease: Power4.easeInOut,
         onComplete: function () {
-          closeTrigger.current.style.zIndex = "5";
-          // closeTrigger.current.style.display = "none";
-          // openTrigger.current.style.display = "block";
-          openTrigger.current.style.visibility = "visible";
+          // closeTrigger.current.style.zIndex = "5";
+          closeTrigger.current.style.display = "none";
+          openTrigger.current.style.display = "block";
+          // openTrigger.current.style.visibility = "visible";
         },
       },
       "close"
