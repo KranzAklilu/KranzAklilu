@@ -55,7 +55,7 @@ const NavBar = () => {
   return (
     <div className="w-full px-2 flex justify-between items-center text-sm font-light">
       <img src="../assets/svg/logo.svg" alt="YOo" style={{ width: 80 }} />
-      <div className="sm:hidden">
+      <div className="overflow-hidden sm:hiden">
         <span ref={openTrigger} onClick={handleClick} className="menu-trigger">
           <i ref={openTriggerTop} className="menu-trigger-bar top"></i>
           <i ref={openTriggerMiddle} className="menu-trigger-bar middle"></i>
@@ -69,6 +69,27 @@ const NavBar = () => {
           <i ref={closeTriggerLeft} className="close-trigger-bar left"></i>
           <i ref={closeTriggerRight} className="close-trigger-bar right"></i>
         </span>
+        <div className="inner-container">
+          <span ref={menuTop} className="menu-bg top"></span>
+          <span ref={menuMiddle} className="menu-bg middle"></span>
+          <span ref={menuBottom} className="menu-bg bottom"></span>
+          <div className="menu-container">
+            <ul ref={menu} className="menu">
+              <li>
+                <a href="#">Login</a>
+              </li>
+              <li>
+                <a href="#">Create account</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <ul className="sm:flex items-center space-x-4 hidden">
         <li>

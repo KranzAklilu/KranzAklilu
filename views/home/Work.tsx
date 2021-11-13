@@ -7,6 +7,7 @@ const Work = () => {
   const filteredTechStack = projects
     .map(({ technologiesUsed }) => technologiesUsed)
     .flat();
+
   return (
     <div className="px-4">
       <h1 className="text-5xl font-bold mb-2">Work</h1>

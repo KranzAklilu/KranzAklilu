@@ -1,6 +1,7 @@
 import Head from "next/head";
 import NavBar from "../components/layout/NavBar";
 import FullScreenIntro from "../views/FullScreenIntro";
+import Resume from "../views/home/Resume";
 import Work from "../views/home/Work";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <main className="flex flex-col items-center justify-center w-full flex-1 text-center">
         <FullScreenIntro />
         <Work />
+        <Resume />
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t">

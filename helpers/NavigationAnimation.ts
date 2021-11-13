@@ -46,6 +46,7 @@ export const NavigationAnimation: NavigationAnimationType = ({
         delay: 0.1,
         ease: Power4.easeIn,
         onComplete: function () {
+          // closeTrigger.current.style.display = "block";
           closeTrigger.current.style.zIndex = "25";
         },
       },
@@ -59,7 +60,8 @@ export const NavigationAnimation: NavigationAnimationType = ({
         y: "-=80px",
         ease: Power4.easeIn,
         onComplete: function () {
-          openTrigger.current.style.visibility = "hidden";
+          openTrigger.current.style.visibility = "visible";
+          // openTrigger.current.style.display = "none";
         },
       },
       "preOpen"
@@ -80,7 +82,7 @@ export const NavigationAnimation: NavigationAnimationType = ({
       menuTop.current,
       0.8,
       {
-        y: "13%",
+        y: "150%",
         ease: Power4.easeInOut,
       },
       "open"
@@ -98,7 +100,7 @@ export const NavigationAnimation: NavigationAnimationType = ({
       menuBottom.current,
       0.8,
       {
-        y: "-114%",
+        y: "-150%",
         ease: Power4.easeInOut,
       },
       "open"
@@ -152,6 +154,8 @@ export const NavigationAnimation: NavigationAnimationType = ({
         ease: Power4.easeInOut,
         onComplete: function () {
           closeTrigger.current.style.zIndex = "5";
+          // closeTrigger.current.style.display = "none";
+          // openTrigger.current.style.display = "block";
           openTrigger.current.style.visibility = "visible";
         },
       },
@@ -161,7 +165,7 @@ export const NavigationAnimation: NavigationAnimationType = ({
       menuMiddle.current,
       0.2,
       {
-        backgroundColor: "#fff",
+        backgroundColor: "#6295ca",
         ease: Power4.easeInOut,
       },
       "close"
@@ -170,7 +174,7 @@ export const NavigationAnimation: NavigationAnimationType = ({
       menuBottom.current,
       0.2,
       {
-        backgroundColor: "#fff",
+        backgroundColor: "#6295ca",
         ease: Power4.easeInOut,
       },
       "close"
@@ -192,7 +196,7 @@ export const NavigationAnimation: NavigationAnimationType = ({
       menuTop.current,
       0.8,
       {
-        y: "-113%",
+        y: "-100%",
         ease: Power4.easeInOut,
         duration: "0.2",
       },
@@ -213,7 +217,7 @@ export const NavigationAnimation: NavigationAnimationType = ({
       menuBottom.current,
       0.8,
       {
-        y: "23%",
+        y: "25%",
         ease: Power4.easeInOut,
         onComplete: function () {
           menuTop.current.style.backgroundColor = "#000000";
