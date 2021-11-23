@@ -55,7 +55,7 @@ const NavBar = () => {
   return (
     <div className="w-full px-2 flex justify-between items-center text-sm font-light">
       <img src="../assets/svg/logo.svg" alt="YOo" style={{ width: 80 }} />
-      <div className="overflow-hidden sm:hiden">
+      <div className="overflow-hidden sm:hidden">
         <span ref={openTrigger} onClick={handleClick} className="menu-trigger">
           <i ref={openTriggerTop} className="menu-trigger-bar top"></i>
           <i ref={openTriggerMiddle} className="menu-trigger-bar middle"></i>

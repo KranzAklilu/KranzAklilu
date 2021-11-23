@@ -5,7 +5,7 @@ const ShiftedBackground: FC<{ className?: string }> = ({
 }) => {
   return (
     <span
-      className={`inline-block bg-black text-white px-2 py-0.5 text-5xl sm:text-6xl rounded-md capitalize ${className}`}
+      className={`inline-block bg-black text-white px-2 py-1 text-5xl sm:text-6xl rounded-sm capitalize ${className}`}
     >
       {children}
     </span>

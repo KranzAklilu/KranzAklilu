@@ -4,9 +4,9 @@ import FilterWorkBadge from "./FilterWorkBadge";
 
 const WorkCard: FC<{ project: Project }> = ({ project }) => {
   return (
-    <div className="mx-1 my-1 py-4">
+    <div className="mx-1 my-1 py-5 px-3 bg-gray-100 rounded-md">
       <img
-        className="w-11/12 mx-auto"
+        className="w-11/12 mx-auto rounded-md"
         src={project.imageSrc}
         alt={`Image for ${project.name}`}
       />
