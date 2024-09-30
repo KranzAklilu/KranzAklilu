@@ -1,13 +1,13 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://astro-paper.pages.dev/",
-  author: "Sat Naing",
+  website: "https://kranz.build",
+  author: "Kranz Aklilu",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
   title: "Kranz Aklilu",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
-  postPerPage: 3,
+  postPerPage: 4,
 };
 
 export const LOCALE = ["en-EN"]; // set to [] to use the environment default
@@ -29,7 +29,7 @@ export const SOCIALS: SocialObjects = [
   {
     name: "Fiverr",
     href: "https://www.fiverr.com/kranzaklilu",
-    linkTitle: `${SITE.title} on Facebook`,
+    linkTitle: `${SITE.title} on Fiverr`,
     active: true,
   },
   {
@@ -40,7 +40,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Mail",
-    href: "info@kranz.build",
+    href: "kranz.aklilu@gmail.com",
     linkTitle: `Send an email to ${SITE.title}`,
     active: true,
   },
@@ -52,8 +52,8 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "WhatsApp",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "",
     linkTitle: `${SITE.title} on WhatsApp`,
-    active: true,
+    active: false,
   },
 ];

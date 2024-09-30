@@ -1,0 +1,16 @@
+---
+import { SITE } from "@config";
+import Projects from "@layouts/Projects.astro";
+import getSortedPosts from "@utils/getSortedPosts";
+import getPageNumbers from "@utils/getPageNumbers";
+
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("project");
+
+const totalPages = getPageNumbers(projects.length);
+
+const paginatedPosts = projects.slice(0, SITE.postPerPage);
+---
+
+<Projects projects={paginatedPosts} pageNum={1} totalPages={totalPages.length} />
